@@ -74,7 +74,6 @@ class CoverageService(object):
         for site in self._sites:
             distance = self._haversine(lon, lat, site["lon"], site["lat"])
             provider = site["provider"]
-            print(f"{distance,provider}")
             
             if (provider not in best_by_provider) or (distance < best_by_provider[provider]["distance"]):
                 best_by_provider[provider] = {"distance": distance,
