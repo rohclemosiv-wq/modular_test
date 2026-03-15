@@ -10,7 +10,7 @@ for each address, the nearest mobile‑network coverage (2G/3G/4G) for every Fre
 * Reads the CSV file
   `2018_01_Sites_mobiles_2G_3G_4G_France_metropolitaine_L93_ver2.csv`
   (Lambert‑93 coordinates → GPS conversion with **pyproj**).
-* Returns JSON exactly as described in the specification.
+* Returns JSON data.
 * **Server‑side logging** (INFO + ERROR) to monitor request volume and error rates.
 
 ## Project layout
