@@ -48,10 +48,7 @@ class CoverageService(object):
                                      "3G": coverage_3g,
                                      "4G": coverage_4g},
                     })
-                except Exception as e:
-                    print(e)
-                #except (KeyError, ValueError):
-                    #print(f"Error: {(str(KeyError), str(ValueError))}")
+                except (KeyError, ValueError):                    
                     continue
 
     def _haversine(self, lon1:float, lat1:float, lon2:float, lat2:float):
